@@ -17,9 +17,10 @@ class Paper{
         var angle = this.body.angle;
         fill("white");
         push();
+        translate(pos.x,pos.y);
         rotate(angle);
         imageMode(CENTER);
-        image(this.image,pos.x,pos.y,33,33);
+        image(this.image,0,0,33,33);
         pop();
     }
 }
